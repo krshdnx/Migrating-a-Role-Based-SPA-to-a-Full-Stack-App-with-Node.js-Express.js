@@ -1,0 +1,85 @@
+/* Page Visibility Rules */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Authentication State Rules */
+body.not-authenticated .role-logged-in {
+  display: none !important;
+}
+
+body.authenticated .role-logged-out {
+  display: none !important;
+}
+
+/* Admin Role Rules */
+.role-admin {
+  display: none !important;
+}
+
+body.is-admin .role-admin {
+  display: block !important;
+}
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+}
+
+/* Table Styles */
+.table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: #f8f9fa;
+}
+
+/* Badge Styles */
+.badge {
+  padding: 0.5em 0.75em;
+  font-weight: 500;
+}
+
+/* Toast Styles */
+.toast {
+  min-width: 300px;
+}
+
+/* Form Validation */
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}
+
+.was-validated .form-control:valid {
+  border-color: #198754;
+}
+
+/* Item Row Styles */
+.item-row {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .card-body {
+    padding: 1.5rem !important;
+  }
+}
